@@ -7,23 +7,28 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 export const NavBar = () =>(
     <div className="nav-container">
         <Container>
-            <Row>
-                <Col>
+            <Row className="justify-content-md-center">
+                <Col md="auto">
                     <NavLink to="/" className="nav-link">
-                    <h2 className="">Home</h2>
+                    <p className="nav-text">Home</p>
                     </NavLink>
                 </Col>
-                <Col>
+                <Col md="auto">
                     <NavLink to="/about" className="nav-link">
-                    <h2 className="">About</h2>
+                    <p className="nav-text">About</p>
                     </NavLink>
                 </Col>
-                <Col>
+                <Col md="auto">
                     <NavLink to="/experience" className="nav-link">
-                    <h2 className="">Experiences</h2>
+                    <p className="nav-text">Experiences</p>
                     </NavLink>
                 </Col>
             </Row>
         </Container>
     </div>
 )
+/*
+<p className="nav-text">Home</p>
+<p className="nav-text">About</p>
+<p className="nav-text">Experiences</p>
+*/
