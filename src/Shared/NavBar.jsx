@@ -5,30 +5,50 @@ import Col from 'react-bootstrap/Col';
 import { Link, NavLink, useLocation } from "react-router-dom";
 
 export const NavBar = () =>(
-    <div className="nav-container">
-        <Container>
-            <Row className="justify-content-md-center">
-                <Col md="auto">
-                    <NavLink to="/" className="nav-link">
-                    <p className="nav-text">Home</p>
-                    </NavLink>
+    <div>
+        <div className="nav-container">
+            <Container>
+            <Row className="align-navbar-text justify-content-md-center">
+                <Col className="nav-col-margin">
+                <NavLink to="/" className="nav-link">
+                    <h2 className="nav-text">Home</h2>
+                </NavLink>
                 </Col>
-                <Col md="auto">
-                    <NavLink to="/about" className="nav-link">
-                    <p className="nav-text">About</p>
-                    </NavLink>
+                <Col className="nav-col-margin">
+                <NavLink to="/about" className="nav-link">
+                    <h2 className="nav-text">About</h2>
+                </NavLink>
                 </Col>
-                <Col md="auto">
-                    <NavLink to="/experience" className="nav-link">
-                    <p className="nav-text">Experiences</p>
-                    </NavLink>
+
+                <Col className="nav-col-margin">
+                <NavLink to="/experience" className="nav-link">
+                    <h2 className="nav-text">Experience</h2>
+                </NavLink>
                 </Col>
             </Row>
-        </Container>
+            </Container>
+        </div>
     </div>
 )
 /*
-<p className="nav-text">Home</p>
-<p className="nav-text">About</p>
-<p className="nav-text">Experiences</p>
+<Container>
+            <Row className="justify-content-md-center">
+                <div className= "col-xs-4">
+                    <NavLink to="/" className="nav-link">
+                        <p className="nav-text">Home</p>
+                    </NavLink>
+                </div>
+                <div className= "col-xs-4">
+                    <NavLink to="/about" className="nav-link">
+                        <p className="nav-text">About</p>
+                    </NavLink>
+                </div>
+                <div className= "col-xs-4">
+                    <NavLink to="/experience" className="nav-link">
+                        <p className="nav-text">Experiences</p>
+                    </NavLink>
+                </div>
+            </Row>
+</Container>
+
 */

@@ -6,10 +6,6 @@
     padding: 0;
 }
 
-.align-items-center{
-    align-items: center;
-}
-
 .sticky {
     position: fixed;
     top: 0;
@@ -22,8 +18,23 @@
     font-size: 18px;
     font-family:'Courier New', Courier, monospace;
     font-weight: 800;
+    margin-bottom: 0;
 }
 
 .nav-link{
     text-decoration: none;
+}
+
+.nav-container{
+}
+
+.align-navbar-text{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-col-margin{
+    margin-right: 1%;
+    margin-left: 1%;
 }

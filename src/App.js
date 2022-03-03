@@ -7,7 +7,6 @@ import {Experience} from './ExperiencePage/Experience';
 import {NavBar} from './Shared/NavBar';
 import Helmet from 'react-helmet';
 
-
 function App() {
   return (
     <div className="App">
