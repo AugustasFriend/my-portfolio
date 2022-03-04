@@ -9,18 +9,18 @@ export const NavBar = () =>(
         <div className="nav-container">
             <Container>
             <Row className="align-navbar-text justify-content-md-center">
-                <Col className="nav-col-margin">
+                <Col className="">
                 <NavLink to="/" className="nav-link">
                     <h2 className="nav-text">Home</h2>
                 </NavLink>
                 </Col>
-                <Col className="nav-col-margin">
+                <Col className="">
                 <NavLink to="/about" className="nav-link">
                     <h2 className="nav-text">About</h2>
                 </NavLink>
                 </Col>
 
-                <Col className="nav-col-margin">
+                <Col className="">
                 <NavLink to="/experience" className="nav-link">
                     <h2 className="nav-text">Experience</h2>
                 </NavLink>

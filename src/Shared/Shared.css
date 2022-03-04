@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+.align-items-center{
+    align-items: center;
+}
+
 .sticky {
     position: fixed;
     top: 0;
@@ -15,7 +19,7 @@
 
 .nav-text{
     color: #707074;
-    font-size: 18px;
+    font-size: 20px;
     font-family:'Courier New', Courier, monospace;
     font-weight: 800;
     margin-bottom: 0;
@@ -24,8 +28,13 @@
 .nav-link{
     text-decoration: none;
 }
-
 .nav-container{
+    background-color:#272727;
+    width: 400px;
+    height: 60px;
+    margin: auto;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .align-navbar-text{
@@ -35,6 +44,6 @@
 }
 
 .nav-col-margin{
-    margin-right: 1%;
-    margin-left: 1%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
