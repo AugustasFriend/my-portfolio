@@ -4,32 +4,44 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Link, NavLink, useLocation } from "react-router-dom";
 
-export const NavBar = () =>(
+
+function useActiveRoute() {
+    const location = useLocation();
+    return location.pathname;
+  }
+const NavBar = () =>{
+    
+    return(
     <div>
         <div className="nav-container">
             <Container>
             <Row className="align-navbar-text justify-content-md-center">
                 <Col className="nav-col-left-margin">
                 <NavLink to="/" className="nav-link">
-                    <h2 className="nav-text">Home</h2>
+                <h2 className={"nav-text" + (useActiveRoute() == "/" ? " activated" : "")}>Home</h2>
+                    <div className={ 'underscore' + (useActiveRoute() == "/" ? " activated" : "")}></div>
                 </NavLink>
                 </Col>
                 <Col className="nav-col-margin">
                 <NavLink to="/about" className="nav-link">
-                    <h2 className="nav-text">About</h2>
+                    <h2 className={"nav-text" + (useActiveRoute() == "/about" ? " activated" : "")}>About</h2>
+                    <div className={ 'underscore' + (useActiveRoute() == "/about" ? " activated" : "")}></div>
                 </NavLink>
                 </Col>
 
                 <Col className="nav-col-right-margin">
                 <NavLink to="/experience" className="nav-link">
-                    <h2 className="nav-text">Experience</h2>
+                <h2 className={"nav-text" + (useActiveRoute() == "/experience" ? " activated" : "")}>Experience</h2>
+                    <div className={ 'underscore' + (useActiveRoute() == "/experience" ? " activated" : "")}></div>
                 </NavLink>
                 </Col>
             </Row>
             </Container>
         </div>
-    </div>
-)
+    </div>)
+}
+
+export default NavBar;
 /*
 <Container>
             <Row className="justify-content-md-center">
