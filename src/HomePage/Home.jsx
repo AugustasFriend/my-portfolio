@@ -23,7 +23,7 @@ const Home = () =>{
 
     return(<div>
         <Container>
-            <Row className="align-items-center">
+            <Row className="align-items-center home-row-mt">
                 <Col>
                     <div className="vertical-line"></div>
                 </Col>
@@ -65,7 +65,7 @@ const Home = () =>{
                     <img src="brickthegap.svg"/>
                 </Col>
             </Row>
-            <Row className="align-items-center">
+            <Row className="align-items-center home-row-mb">
             <Col className="hl-mr">
                     <div className="horizontal-line"></div>
                 </Col>
