@@ -29,6 +29,9 @@ const Home = () =>{
                 </Col>
             </Row>
             <Row className="align-items-center">
+                <Col className="hl-mr">
+                    <div className="horizontal-line"></div>
+                </Col>
                 <Col className="home-profile-col">
                 <p className="profile-text intro">Hi! I am Augustas</p>
                 <p className="profile-text title">{newTitle}</p>
@@ -36,6 +39,9 @@ const Home = () =>{
                 </Col>
                 <Col>
                     <img src="home-profile-picture.svg"></img>
+                </Col>
+                <Col className="hl-ml">
+                    <div className="horizontal-line"></div>
                 </Col>
             </Row>
             <Row className="align-items-center">
@@ -52,7 +58,7 @@ const Home = () =>{
                 <Col>
                     <img src="grammarly.svg" />
                 </Col>
-                <Col className="project-image-ml">
+                <Col className="box">
                     <img src="designerstoolkit.svg" />
                 </Col>
                 <Col>
@@ -60,11 +66,17 @@ const Home = () =>{
                 </Col>
             </Row>
             <Row className="align-items-center">
-                <Col>
+            <Col className="hl-mr">
+                    <div className="horizontal-line"></div>
+                </Col>
+                <Col className="box">
                     <img src="ergobrooch.svg"/>
                 </Col>
-                <Col>
+                <Col className="box">
                     <img src="trainroute.svg"/>
+                </Col>
+                <Col className="hl-ml">
+                    <div className="horizontal-line"></div>
                 </Col>
             </Row>
         </Container>

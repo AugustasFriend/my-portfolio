@@ -6,6 +6,14 @@
     padding: 0;
 }
 
+.hl-ml{
+    margin-left: 10%;
+}
+
+.hl-mr{
+    margin-right: 10%;
+}
+
 .align-items-center{
     align-items: center;
 }
@@ -89,4 +97,9 @@
 .vertical-line{
     border-left: 1px solid #707070;
     height: 150px;
+}
+
+.horizontal-line{
+    border-top: 1px solid #707070;
+    width: 150px;
 }
