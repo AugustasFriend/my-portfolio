@@ -15,7 +15,7 @@ const NavBar = () =>{
     <div>
         <div className="nav-container">
             <Container>
-            <Row className="align-navbar-text justify-content-md-center">
+            <Row className="align-items-center justify-content-md-center">
                 <Col className="nav-col-left-margin">
                 <NavLink to="/" className="nav-link">
                 <h2 className={"nav-text" + (useActiveRoute() == "/" ? " activated" : "")}>Home</h2>

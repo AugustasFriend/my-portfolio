@@ -20,7 +20,7 @@
 .nav-text{
     color: #707074;
     font-size: 18px;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Montserrat';
     font-weight: 800;
     margin-bottom: 0;
     padding-top: 6px;
@@ -38,7 +38,7 @@
 .nav-text.activated{
     color: white;
     font-size: 18px;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Montserrat';
     font-weight: 800;
     margin-bottom: 0;
     padding-top: 6px;
@@ -55,7 +55,7 @@
     border-bottom-right-radius: 25px;
 }
 
-.align-navbar-text{
+.align-items-center{
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
@@ -84,4 +84,9 @@
 .underscore.activated{
     width: 100%;
     background-color: white;
+}
+
+.vertical-line{
+    border-left: 1px solid #707070;
+    height: 150px;
 }

@@ -1,5 +1,5 @@
 @import "./Shared/Shared.css";
-
+@import "./HomePage/Home.css";
 .App {
   text-align: center;
 }

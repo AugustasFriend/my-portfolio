@@ -1,0 +1,32 @@
+
+.profile-text{
+    color: white;
+    font-family:'Montserrat';
+}
+
+.intro{
+    font-size: 20px;
+}
+
+.title{
+    font-size: 22px;
+}
+
+.bread {
+    font-size: 18px;
+    width: 400px;
+    color: #ABABAB;
+}
+
+.project
+{
+    font-size: 40px;
+}
+
+.home-profile-col{
+    padding-top: 7%;
+}
+
+.project-image-ml{
+    margin-left: 2%;
+}
