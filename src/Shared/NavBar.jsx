@@ -13,7 +13,7 @@ const NavBar = () =>{
     
     return(
     <div>
-        <div className="nav-container">
+        <div className="nav-container sticky">
             <Container>
             <Row className="align-items-center justify-content-md-center">
                 <Col className="nav-col-left-margin">
