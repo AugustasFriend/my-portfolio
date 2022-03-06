@@ -19,10 +19,11 @@
 
 .nav-text{
     color: #707074;
-    font-size: 20px;
+    font-size: 18px;
     font-family:'Courier New', Courier, monospace;
     font-weight: 800;
     margin-bottom: 0;
+    padding-top: 6px;
 }
 
 .nav-link{
@@ -45,5 +46,13 @@
 
 .nav-col-margin{
     margin-right: 5%;
-    margin-left: 5%;
+    margin-left: 14%;
+}
+
+.nav-col-left-margin{
+    margin-left: 7%;
+}
+
+.nav-col-right-margin{
+    margin-left: 3%;
 }
