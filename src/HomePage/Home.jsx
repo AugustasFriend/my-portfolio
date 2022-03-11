@@ -38,7 +38,7 @@ const Home = () =>{
                 <p className="profile-text bread">Friendly and highly ambitious Interaction Designer that is fueled by passion and experience to create great products and services</p>
                 </Col>
                 <Col>
-                    <img src="home-profile-picture.svg"></img>
+                    <img src="home-profile-picture.svg"/>
                 </Col>
                 <Col className="hl-ml">
                     <div className="horizontal-line"></div>

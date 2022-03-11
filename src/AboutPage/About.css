@@ -1,0 +1,17 @@
+.about-intro-text{
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: white;
+    width: 800px;
+}
+
+.about-title{
+    font-size: 40px;
+    color:white;
+    font-family: "Montserrat";
+}
+
+.about-tools-padding{
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
