@@ -5,9 +5,9 @@ const About = () =>{
     return(
     <div>
         <Container>
-            <Row className= "align-items-center home-row-mt">
+            <Row className= "align-items-center row-mt">
                 <Col>
-                <p className="about-intro-text">Hi!
+                <p className="about-text">Hi!
                     I am a soon-to-be Software Engineer graduate that is eager to make the world a better, 
                     more efficient place. I was born in Lithuania but have lived most of my life in Sweden, 
                     and I am currently based in Gothenburg. My educational background has taught me the value of 
@@ -20,7 +20,7 @@ const About = () =>{
                     <div className="horizontal-line"/>
                 </Col>
                 <Col>
-                <p>Picture</p>
+                <img src="home-profile-picture.svg"/>
                 </Col>
                 <Col className="hl-ml">
                     <div className="horizontal-line"/>
@@ -33,10 +33,10 @@ const About = () =>{
             </Row>
             <Row className="align-items-center">
                 <Col>
-                <p>picture</p>
+                <img src="chalmers-logo.svg"/>
                 </Col>
-                <Col>
-                <p className="about-intro-text">I started studying Information Technology at Chalmers University of Technology year 2017 at the age of 18. 
+                <Col className="about-text-pl">
+                <p className="about-text">I started studying Information Technology at Chalmers University of Technology year 2017 at the age of 18. 
                     It is a 5-year programme that includes both a bachelor's and master's degree. 
                     The first three years was heavily focused on gaining knowledge about programming and what good practices there are. 
                     as well as implementing the knowledge to sophisticated programming projects. 
@@ -53,7 +53,7 @@ const About = () =>{
             </Row>
             <Row className="align-items-center">
                 <Col>
-                    <p className="about-intro-text">You can contact me via e-mail at augustas.eidikis@outlook.com or send a message to my LinkedIn account here.</p>
+                    <p className="about-text">You can contact me via e-mail at augustas.eidikis@outlook.com or send a message to my LinkedIn account here.</p>
                 </Col>
             </Row>
             <Row className="align-items-center">
@@ -61,7 +61,7 @@ const About = () =>{
                 <p className="about-title">Tools & Programs</p>
                 </Col>
             </Row>
-            <Row className="align-items-center">
+            <Row className="align-items-center row-mb">
                 <Col className="about-tools-padding">
                     <img src="adobexd-image.svg"/>
                 </Col>
