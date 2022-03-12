@@ -1,6 +1,7 @@
 @import "./Shared/Shared.css";
 @import "./HomePage/Home.css";
 @import "./AboutPage/About.css";
+@import "./ExperiencePage/Experience.css";
 .App {
   text-align: center;
 }
