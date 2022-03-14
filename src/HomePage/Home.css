@@ -34,3 +34,37 @@
 .box{
     padding: 0 3% 0 3%;
 }
+
+.project-popup{
+    width: 220px;
+    height: 160px;
+    font-size: 18px;
+    color: white;
+    background-color: #272727;
+    border-radius: 20px;
+    /*opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;*/
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project-popup:hover{
+    width: 220px;
+    height: 160px;
+    font-size: 18px;
+    color: white;
+    background-color: #272727;
+    border-radius: 20px;
+    /*visibility: visible;
+    opacity: 1;*/
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.relative-pos{
+    position: relative !important;
+}

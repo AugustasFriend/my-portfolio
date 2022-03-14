@@ -5,6 +5,22 @@ import Container from "react-bootstrap/Container";
 
 const Home = () =>{
 
+    const hoverstatus = [false,false,false,false,false];
+    const setHoverStatus = (i, boolStatus) =>{
+            hoverstatus[i] = boolStatus;
+            console.log(hoverstatus[1]);        
+    }
+
+    const [hover, setHover] = useState([false,false,false,false,false]);
+
+    const adjustArray = (i) => {
+        return [(i == 0), (i == 1), (i == 2), (i == 3), (i == 4)]
+    }
+
+    const resetArray = () =>{
+        return [false, false, false, false, false]
+    }
+
     const titles = [
         'Interaction Designer', 'Software Developer'
     ]
@@ -58,8 +74,9 @@ const Home = () =>{
                 <Col>
                     <img src="grammarly.svg" />
                 </Col>
-                <Col className="box">
-                    <img src="designerstoolkit.svg" />
+                <Col className="box relative-pos">
+                    {hover[1] &&(<p className="project-popup align-items-center">A web-based application for aiding designers in structuring and organising design sprints.</p>)}
+                    <img src="designerstoolkit.svg" onMouseOver={() => setHover(adjustArray(1))} onMouseOut={() => setHover(resetArray())} />
                 </Col>
                 <Col>
                     <img src="brickthegap.svg"/>
