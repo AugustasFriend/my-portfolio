@@ -42,12 +42,15 @@
     color: white;
     background-color: #272727;
     border-radius: 20px;
-    /*opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;*/
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    /* transition effect. not necessary */
+    transition: opacity 1s, visibility 1s;
 }
 
 .project-popup:hover{
@@ -57,8 +60,8 @@
     color: white;
     background-color: #272727;
     border-radius: 20px;
-    /*visibility: visible;
-    opacity: 1;*/
+    visibility: visible;
+    opacity: 1;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -68,3 +71,8 @@
 .relative-pos{
     position: relative !important;
 }
+
+.relative-pos:hover .project-popup{
+    visibility: visible;
+    opacity: 1;
+  }

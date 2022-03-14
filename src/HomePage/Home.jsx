@@ -71,14 +71,16 @@ const Home = () =>{
                 </Col>
             </Row>
             <Row className="align-items-center">
-                <Col>
+                <Col className="relative-pos">
+                    <p className="project-popup align-items-center">A language learning application to help non-native speakers improve their Swedish.</p>
                     <img src="grammarly.svg" />
                 </Col>
                 <Col className="box relative-pos">
-                    {hover[1] &&(<p className="project-popup align-items-center">A web-based application for aiding designers in structuring and organising design sprints.</p>)}
+                    <p className="project-popup align-items-center">A web-based application for aiding designers in structuring and organising design sprints.</p>
                     <img src="designerstoolkit.svg" onMouseOver={() => setHover(adjustArray(1))} onMouseOut={() => setHover(resetArray())} />
                 </Col>
-                <Col>
+                <Col className="relative-pos">
+                    <p className="project-popup align-items-center">A Jenga-like cooperative game that challenges players to learn about each other without preconceptions.</p>
                     <img src="brickthegap.svg"/>
                 </Col>
             </Row>
@@ -86,11 +88,15 @@ const Home = () =>{
             <Col className="hl-mr">
                     <div className="horizontal-line"></div>
                 </Col>
-                <Col className="box">
-                    <img src="ergobrooch.svg"/>
+                <Col className="box relative-pos">
+                    <div className="circle">
+                        <p className="project-popup align-items-center">A team-based posture notification device that allows users to "nudge" each other to sit upright.</p>
+                    </div>
+                    <img src="ergobrooch.svg" className="home-project-image"/>
                 </Col>
-                <Col className="box">
-                    <img src="trainroute.svg"/>
+                <Col className="box relative-pos">
+                    <p className="project-popup align-items-center">Android application that offers help in organising train travels throughout Europe.</p>
+                    <img src="trainroute.svg" />
                 </Col>
                 <Col className="hl-ml">
                     <div className="horizontal-line"></div>
