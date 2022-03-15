@@ -53,21 +53,6 @@
     transition: opacity 1s, visibility 1s;
 }
 
-.project-popup:hover{
-    width: 220px;
-    height: 160px;
-    font-size: 18px;
-    color: white;
-    background-color: #272727;
-    border-radius: 20px;
-    visibility: visible;
-    opacity: 1;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .relative-pos{
     position: relative !important;
 }
@@ -76,3 +61,13 @@
     visibility: visible;
     opacity: 1;
   }
+
+.interaction-designer{
+    color: orange;
+    font-family: 'Bookman';
+    font-size: 24px;
+}
+.software-developer{
+    color: lightgreen;
+    font-family: 'Courier New', Courier, monospace;
+}

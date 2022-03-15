@@ -2,6 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
+import Fader from "../Shared/Fader";
 
 const Home = () =>{
 
@@ -9,20 +10,21 @@ const Home = () =>{
         'Interaction Designer', 'Software Developer'
     ]
 
-    const [newTitle, setnewTitle] = useState("Interaction Designer");
+    var [newTitle, setnewTitle] = useState("Interaction Designer");
 
-    const [currentTitle, setCurrentTitle] = useState(1);
+    var [currentTitle, setCurrentTitle] = useState(0);
 
     const swapTitle = useCallback(() => {
         var index = 0;
         if(currentTitle ==0){
             index = 1;
-            setCurrentTitle(1);
+            setCurrentTitle(currentTitle++);
         }
         else{
             index = 0;
-            setCurrentTitle(0)
+            setCurrentTitle(currentTitle--);
         }
+        console.log(index);
         setnewTitle(titles[index]);
     }, []);
 
@@ -44,7 +46,7 @@ const Home = () =>{
                 </Col>
                 <Col className="home-profile-col">
                 <p className="profile-text intro">Hi! I am Augustas</p>
-                <p className="profile-text title">{newTitle}</p>
+                <p className={`profile-text title + ${newTitle == "Interaction Designer"? "interaction-designer": "software-developer"}`}>{newTitle}</p>
                 <p className="profile-text bread">Friendly and highly ambitious Interaction Designer that is fueled by passion and experience to create great products and services</p>
                 </Col>
                 <Col>

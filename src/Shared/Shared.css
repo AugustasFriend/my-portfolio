@@ -113,3 +113,18 @@
 .row-mt{
     margin-top: 4%;
 }
+
+.fade-in{
+    transition: opacity 1s ease;
+    color: white;
+    font-family:'Montserrat';
+    font-size: 22px;
+}
+
+.fade-out{
+    opacity: 0;
+    transition: opacity 1s ease;
+    color: white;
+    font-family:'Montserrat';
+    font-size: 22px;
+}
