@@ -1,7 +1,9 @@
-import React from "react";
+import {React, useState} from "react";
 import {Col, Row, Container } from "react-bootstrap";
 
 const Experience = () =>{
+
+    const [showdt, setShowdt] = useState(false);
         return(
         <div>
             <Container>
@@ -17,8 +19,9 @@ const Experience = () =>{
                     <Col>
                         <img src="designerstoolkit.svg"/>
                     </Col>
-                    <Col>
-                        <p className="experience-project-title">Designer's Toolkit</p>
+                    <Col onClick={() => setShowdt(true)}>
+                        {!showdt &&(<p className="experience-project-title">Designer's Toolkit</p>)}
+                        {showdt && (<p className="experience-project-title">this is the description</p>)}
                     </Col>
                     <Col>
                         <div className="horizontal-line"/>
