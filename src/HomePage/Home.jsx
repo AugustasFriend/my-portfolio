@@ -5,30 +5,24 @@ import Container from "react-bootstrap/Container";
 
 const Home = () =>{
 
-    const hoverstatus = [false,false,false,false,false];
-    const setHoverStatus = (i, boolStatus) =>{
-            hoverstatus[i] = boolStatus;
-            console.log(hoverstatus[1]);        
-    }
-
-    const [hover, setHover] = useState([false,false,false,false,false]);
-
-    const adjustArray = (i) => {
-        return [(i == 0), (i == 1), (i == 2), (i == 3), (i == 4)]
-    }
-
-    const resetArray = () =>{
-        return [false, false, false, false, false]
-    }
-
     const titles = [
         'Interaction Designer', 'Software Developer'
     ]
 
-    const [newTitle, setnewTitle] = useState("");
+    const [newTitle, setnewTitle] = useState("Interaction Designer");
+
+    const [currentTitle, setCurrentTitle] = useState(1);
 
     const swapTitle = useCallback(() => {
-        const index = Math.floor(Math.random() * titles.length);
+        var index = 0;
+        if(currentTitle ==0){
+            index = 1;
+            setCurrentTitle(1);
+        }
+        else{
+            index = 0;
+            setCurrentTitle(0)
+        }
         setnewTitle(titles[index]);
     }, []);
 
@@ -77,7 +71,7 @@ const Home = () =>{
                 </Col>
                 <Col className="box relative-pos">
                     <p className="project-popup align-items-center">A web-based application for aiding designers in structuring and organising design sprints.</p>
-                    <img src="designerstoolkit.svg" onMouseOver={() => setHover(adjustArray(1))} onMouseOut={() => setHover(resetArray())} />
+                    <img src="designerstoolkit.svg"/>
                 </Col>
                 <Col className="relative-pos">
                     <p className="project-popup align-items-center">A Jenga-like cooperative game that challenges players to learn about each other without preconceptions.</p>
