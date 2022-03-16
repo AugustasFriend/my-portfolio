@@ -9,6 +9,10 @@ function useActiveRoute() {
     const location = useLocation();
     return location.pathname;
   }
+
+function resetScroll(){
+    window.scrollTo(0, 0)
+}
 const NavBar = () =>{
     
     return(
@@ -17,20 +21,20 @@ const NavBar = () =>{
             <Container>
             <Row className="align-items-center justify-content-md-center">
                 <Col className="nav-col-left-margin">
-                <NavLink to="/" className="nav-link">
+                <NavLink to="/" className="nav-link" onClick={() => resetScroll()}>
                 <h2 className={"nav-text" + (useActiveRoute() == "/" ? " activated" : "")}>Home</h2>
                     <div className={ 'underscore' + (useActiveRoute() == "/" ? " activated" : "")}></div>
                 </NavLink>
                 </Col>
                 <Col className="nav-col-margin">
-                <NavLink to="/about" className="nav-link">
+                <NavLink to="/about" className="nav-link" onClick={() => resetScroll()}>
                     <h2 className={"nav-text" + (useActiveRoute() == "/about" ? " activated" : "")}>About</h2>
                     <div className={ 'underscore' + (useActiveRoute() == "/about" ? " activated" : "")}></div>
                 </NavLink>
                 </Col>
 
                 <Col className="nav-col-right-margin">
-                <NavLink to="/experience" className="nav-link">
+                <NavLink to="/experience" className="nav-link" onClick={() => resetScroll()}>
                 <h2 className={"nav-text" + (useActiveRoute() == "/experience" ? " activated" : "")}>Experience</h2>
                     <div className={ 'underscore' + (useActiveRoute() == "/experience" ? " activated" : "")}></div>
                 </NavLink>

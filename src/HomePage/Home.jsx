@@ -2,12 +2,17 @@ import React, { useEffect, useState, useCallback } from "react";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
+import { NavLink } from "react-router-dom";
 
 const Home = () =>{
 
     const titles = [
         'Interaction Designer', 'Software Developer'
     ]
+
+    function resetScroll(){
+        window.scrollTo(0, 0)
+    }
 
     var [newTitle, setnewTitle] = useState("Interaction Designer");
 
@@ -23,7 +28,6 @@ const Home = () =>{
             index = 0;
             setCurrentTitle(currentTitle--);
         }
-        console.log(index);
         setnewTitle(titles[index]);
     }, []);
 
@@ -67,16 +71,22 @@ const Home = () =>{
             </Row>
             <Row className="align-items-center">
                 <Col className="relative-pos">
+                    <NavLink to="/experience" className="nav-link" onClick={() => resetScroll()}>
                     <p className="project-popup align-items-center">A language learning application to help non-native speakers improve their Swedish.</p>
                     <img src="grammarly.svg" />
+                    </NavLink>
                 </Col>
                 <Col className="box relative-pos">
+                    <NavLink to="/experience" className="nav-link" onClick={() => resetScroll()}>
                     <p className="project-popup align-items-center">A web-based application for aiding designers in structuring and organising design sprints.</p>
                     <img src="designerstoolkit.svg"/>
+                    </NavLink>
                 </Col>
                 <Col className="relative-pos">
+                <NavLink to="/experience" className="nav-link" onClick={() => resetScroll()}>
                     <p className="project-popup align-items-center">A Jenga-like cooperative game that challenges players to learn about each other without preconceptions.</p>
                     <img src="brickthegap.svg"/>
+                    </NavLink>
                 </Col>
             </Row>
             <Row className="align-items-center row-mb">
