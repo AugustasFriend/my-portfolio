@@ -2,7 +2,6 @@ import React, { useEffect, useState, useCallback } from "react";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
-import Fader from "../Shared/Fader";
 
 const Home = () =>{
 
