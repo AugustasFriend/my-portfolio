@@ -9,10 +9,12 @@ const Experience = () =>{
     " These methods, thoroughly described, support the designer from start to finish in the process of understanding the user and" + 
     " producing a system/product that effectively meets the requirements of the target user.";
 
-    const dtWID = "We were only two interaction designers working on this project, and thus both of us had more or less responsibility of all parts of the application." + 
+    /*const dtWID = "We were only two interaction designers working on this project, and thus both of us had more or less responsibility of all parts of the application." + 
     " I used both Adobe Xd and Figma to design all the aspects of the website and test it with users. A Trello board was created to divide the workload on the React Application" + 
     " I worked primarly with Bootstrap to structure the html content, and used React Router to effectively implement navigation. I used React Redux to store global variables" +
-    " that could be sent across various components and change content accordingly.";
+    " that could be sent across various components and change content accordingly.";*/
+
+    const dtWID = "• Used both Adobe Xd and Figma to design all the aspects of the website and test it with users.";
 
     const grDescription = "Grammarly is an Android application aimed at developing the user's understanding and usage of the Swedish" + 
     " language on an academic level and thereby passing Swedish proficiency tests. It contains a lexicon and grammar and vocabulary exercises." + 
@@ -45,7 +47,9 @@ const Experience = () =>{
                         <img src="designerstoolkit.svg"/>
                     </Col>
                     <Col onClick={() => setShowdt(true)}>
-                        <p className="experience-body-text">{dtDescription} <p>{dtWID}</p></p>
+                        <p className="experience-body-text">{dtDescription} <p>Responsibilities: <br/> • More or less responsible of all parts of the application.
+                        <br/>{dtWID} <br/>• Worked primarly with Bootstrap to structure the html content, and used React Router to effectively implement navigation. I used React Redux to store global variables
+                        that could be sent across various components and change content accordingly.</p></p>
                     </Col>
                     <Col className="hl-ml">
                         <div className="horizontal-line"/>
@@ -59,7 +63,9 @@ const Experience = () =>{
                         <img src="grammarly.svg"/>
                     </Col>
                     <Col>
-                        <p className="experience-body-text">{grDescription}<p></p></p>
+                        <p className="experience-body-text">{grDescription}<p>Responsibilities: <br/> • More or less responsible of all parts of the application.
+                        <br/>{dtWID} <br/>• Worked primarly with Bootstrap to structure the html content, and used React Router to effectively implement navigation. I used React Redux to store global variables
+                        that could be sent across various components and change content accordingly.</p></p>
                     </Col>
                     <Col className="hl-ml">
                         <div className="horizontal-line"/>
@@ -73,7 +79,9 @@ const Experience = () =>{
                         <img src="trainroute.svg"/>
                     </Col>
                     <Col>
-                        <p className="experience-body-text">{trDescription}<p>{trWID}</p></p>
+                        <p className="experience-body-text">{trDescription}<p>Responsibilities: <br/> • More or less responsible of all parts of the application.
+                        <br/>{dtWID} <br/>• Worked primarly with Bootstrap to structure the html content, and used React Router to effectively implement navigation. I used React Redux to store global variables
+                        that could be sent across various components and change content accordingly.</p></p>
                     </Col>
                     <Col className="hl-ml">
                         <div className="horizontal-line"/>
