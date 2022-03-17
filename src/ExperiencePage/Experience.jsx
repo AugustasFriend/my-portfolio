@@ -11,7 +11,7 @@ const Experience = () =>{
 
     const dtWID = "• Used both Adobe Xd and Figma to design all the aspects of the website and test it with users.";
 
-    const grDescription = "Grammarly is an Android application aimed at developing the user's understanding and usage of the Swedish" + 
+    const grDescription = "Grammarlex is an Android application aimed at developing the user's understanding and usage of the Swedish" + 
     " language on an academic level and thereby passing Swedish proficiency tests. It contains a lexicon and grammar and vocabulary exercises." + 
     " It is based on Grammatical Framework, a framework that describes languages.";
 
@@ -53,7 +53,7 @@ const Experience = () =>{
                     </Col>
                     <Col>
                         <p className="experience-body-text">{grDescription}<p>Responsibilities:
-                        <br/>• Creating wireframes and mockups of the design
+                        <br/>• Creating wireframes and mockups of the design.
                         <br/>• Coding UI layout and connecting it to the model, and in general have a sound project structure that is coherent and decoupled,
                         with a Model-View-Viewmodel pattern in mind.</p></p>
                     </Col>
