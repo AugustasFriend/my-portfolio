@@ -72,20 +72,20 @@ const Home = () =>{
             <Row className="align-items-center">
                 <Col className="relative-pos">
                     <NavLink to="/experience" className="nav-link" onClick={() => resetScroll()}>
-                    <p className="project-popup align-items-center">A language learning application to help non-native speakers improve their Swedish.</p>
-                    <img src="grammarly.svg" />
-                    </NavLink>
-                </Col>
-                <Col className="box relative-pos">
-                    <NavLink to="/experience" className="nav-link" onClick={() => resetScroll()}>
                     <p className="project-popup align-items-center">A web-based application for aiding designers in structuring and organising design sprints.</p>
                     <img src="designerstoolkit.svg"/>
                     </NavLink>
                 </Col>
+                <Col className="box relative-pos">
+                    <NavLink to="/experience" className="nav-link" onClick={() => resetScroll()}>
+                    <p className="project-popup align-items-center">A language learning application to help non-native speakers improve their Swedish.</p>
+                    <img src="grammarly.svg" />
+                    </NavLink>
+                </Col>
                 <Col className="relative-pos">
-                <NavLink to="/experience" className="nav-link" onClick={() => resetScroll()}>
-                    <p className="project-popup align-items-center">A Jenga-like cooperative game that challenges players to learn about each other without preconceptions.</p>
-                    <img src="brickthegap.svg"/>
+                    <NavLink to="/experience" onClick={()=> resetScroll()}>
+                    <p className="project-popup align-items-center">Android application that offers help in organising train travels throughout Europe.</p>
+                    <img src="trainroute.svg" />
                     </NavLink>
                 </Col>
             </Row>
@@ -94,14 +94,18 @@ const Home = () =>{
                     <div className="horizontal-line"></div>
                 </Col>
                 <Col className="box relative-pos">
+                    <NavLink to="/experience" onClick={()=> resetScroll()}>
                     <div className="circle">
                         <p className="project-popup align-items-center">A team-based posture notification device that allows users to "nudge" each other to sit upright.</p>
                     </div>
                     <img src="ergobrooch.svg" className="home-project-image"/>
+                    </NavLink>
                 </Col>
                 <Col className="box relative-pos">
-                    <p className="project-popup align-items-center">Android application that offers help in organising train travels throughout Europe.</p>
-                    <img src="trainroute.svg" />
+                <NavLink to="/experience" className="nav-link" onClick={() => resetScroll()}>
+                    <p className="project-popup align-items-center">A Jenga-like cooperative game that challenges players to learn about each other without preconceptions.</p>
+                    <img src="brickthegap.svg"/>
+                    </NavLink>
                 </Col>
                 <Col className="hl-ml">
                     <div className="horizontal-line"></div>

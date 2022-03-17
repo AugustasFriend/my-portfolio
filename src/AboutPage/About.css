@@ -1,8 +1,12 @@
 .about-text{
     font-family: "Times New Roman";
-    font-size: 20px;
-    color: white;
+    font-size: 18px;
+    color: #f2f2f2;
     width: 950px;
+}
+
+.align-left{
+    text-align: left;
 }
 
 .about-title{
@@ -18,4 +22,8 @@
 
 .about-text-pl{
     padding-left: 3%;
+}
+
+.about-vl-mt{
+    margin-top: 2%;
 }

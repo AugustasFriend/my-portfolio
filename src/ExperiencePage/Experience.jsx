@@ -9,26 +9,15 @@ const Experience = () =>{
     " These methods, thoroughly described, support the designer from start to finish in the process of understanding the user and" + 
     " producing a system/product that effectively meets the requirements of the target user.";
 
-    /*const dtWID = "We were only two interaction designers working on this project, and thus both of us had more or less responsibility of all parts of the application." + 
-    " I used both Adobe Xd and Figma to design all the aspects of the website and test it with users. A Trello board was created to divide the workload on the React Application" + 
-    " I worked primarly with Bootstrap to structure the html content, and used React Router to effectively implement navigation. I used React Redux to store global variables" +
-    " that could be sent across various components and change content accordingly.";*/
-
     const dtWID = "• Used both Adobe Xd and Figma to design all the aspects of the website and test it with users.";
 
     const grDescription = "Grammarly is an Android application aimed at developing the user's understanding and usage of the Swedish" + 
     " language on an academic level and thereby passing Swedish proficiency tests. It contains a lexicon and grammar and vocabulary exercises." + 
     " It is based on Grammatical Framework, a framework that describes languages.";
 
-    const grWID = ""
-
     const trDescription = "TrainRoute is an android application for planning and organising train trips across Europe. With it, the user" +
     " can see travel time between destinations and where train changes have to be made. It also hosts a community chat where" + 
     " travellers can share experience and coordinate trips together.";
-    
-    const trWID ="Heavy focus, for me and the team, was on creating a sound foundation for the application, where the SOLID principles are adhered to, and no unnecessary" + 
-    " dependencies exist. I created detailed UML diagrams of classes we deemed should exist, and how they would depend on each other. Afterward, the focus for me shifted" + 
-    " toward programming and making our concept a reality. It was written using Android Studio in Java, and a Model-View-Vievmodel architectural pattern was adopted." 
 
     const [showdt, setShowdt] = useState(false);
         return(
@@ -47,15 +36,15 @@ const Experience = () =>{
                         <img src="designerstoolkit.svg"/>
                     </Col>
                     <Col onClick={() => setShowdt(true)}>
-                        <p className="experience-body-text">{dtDescription} <p>Responsibilities: <br/> • More or less responsible of all parts of the application.
-                        <br/>{dtWID} <br/>• Worked primarly with Bootstrap to structure the html content, and used React Router to effectively implement navigation. I used React Redux to store global variables
+                        <p className="experience-body-text">{dtDescription} <p>Responsibilities: <br/> • More or less responsible for all parts of the application.
+                        <br/>{dtWID} <br/>• Worked primarly with Bootstrap to structure the html content, React Router to effectively implement navigation and React Redux to store global variables
                         that could be sent across various components and change content accordingly.</p></p>
                     </Col>
                     <Col className="hl-ml">
                         <div className="horizontal-line"/>
                     </Col>
                 </Row>
-                <Row className="align-items-center">
+                <Row className="align-items-center experience-mt">
                     <Col className="hl-mr">
                         <div className="horizontal-line"/>
                     </Col>
@@ -63,15 +52,16 @@ const Experience = () =>{
                         <img src="grammarly.svg"/>
                     </Col>
                     <Col>
-                        <p className="experience-body-text">{grDescription}<p>Responsibilities: <br/> • More or less responsible of all parts of the application.
-                        <br/>{dtWID} <br/>• Worked primarly with Bootstrap to structure the html content, and used React Router to effectively implement navigation. I used React Redux to store global variables
-                        that could be sent across various components and change content accordingly.</p></p>
+                        <p className="experience-body-text">{grDescription}<p>Responsibilities:
+                        <br/>• Creating wireframes and mockups of the design
+                        <br/>• Coding UI layout and connecting it to the model, and in general have a sound project structure that is coherent and decoupled,
+                        with a model-view-viewmodel pattern in mind.</p></p>
                     </Col>
                     <Col className="hl-ml">
                         <div className="horizontal-line"/>
                     </Col>
                 </Row>
-                <Row className="align-items-center row-mb">
+                <Row className="align-items-center row-mb experience-mt">
                     <Col className="hl-mr">
                         <div className="horizontal-line"/>
                     </Col>
@@ -79,9 +69,11 @@ const Experience = () =>{
                         <img src="trainroute.svg"/>
                     </Col>
                     <Col>
-                        <p className="experience-body-text">{trDescription}<p>Responsibilities: <br/> • More or less responsible of all parts of the application.
-                        <br/>{dtWID} <br/>• Worked primarly with Bootstrap to structure the html content, and used React Router to effectively implement navigation. I used React Redux to store global variables
-                        that could be sent across various components and change content accordingly.</p></p>
+                        <p className="experience-body-text">{trDescription}<p>Responsibilities: <br/> 
+                        • Heavy focus on creating a sound foundation for the application, where the SOLID principles are adhered to, and no unnecessary dependencies exist.
+                        <br/>• UML diagrams of classes we deemed should exist, and how they would depend on each other.<br/>
+                        • Programming in Android Studio with Java with focus on OOP and the Model-View-Viewmodel architectural pattern.
+                        </p></p>
                     </Col>
                     <Col className="hl-ml">
                         <div className="horizontal-line"/>
