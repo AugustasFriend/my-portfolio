@@ -70,3 +70,26 @@
     color: lightgreen;
     font-family: 'Courier New', Courier, monospace;
 }
+
+.title-wrapper{
+    height: 100%;
+    animation: move 10s ease-in-out infinite alternate;
+}
+
+@keyframes move{
+    50%{
+        transform: translateY(-50px);
+    }
+}
+
+.title-box{
+    height: 50px;
+    width: 250px;
+    overflow: hidden;
+}
+/*
+  div title box
+    div wrapper
+      div i title item
+
+*/

@@ -49,7 +49,16 @@ const Home = () =>{
                 </Col>
                 <Col className="home-profile-col">
                 <p className="profile-text intro">Hi! I am Augustas</p>
-                <p className={`profile-text title + ${newTitle == "Interaction Designer"? "interaction-designer": "software-developer"}`}>{newTitle}</p>
+                <Row className="align-items-center">
+                    <Col>
+                    <div className="title-box">
+                        <div className="title-wrapper">
+                            <p className="profile-text title interaction-designer">Interaction Designer</p>
+                            <p className="profile-text title software-developer">Software Developer</p>
+                        </div>
+                    </div>
+                    </Col>
+                </Row>
                 <p className="profile-text bread">Friendly and highly ambitious Interaction Designer that is fueled by passion and experience to create great products and services</p>
                 </Col>
                 <Col>
@@ -117,3 +126,5 @@ const Home = () =>{
 }
 
 export default Home;
+/*                        <p className={`profile-text title + ${newTitle == "Interaction Designer"? "interaction-designer": "software-developer"}`}>{newTitle}</p>
+*/
