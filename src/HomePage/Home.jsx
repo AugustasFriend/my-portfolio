@@ -66,7 +66,7 @@ const Home = () =>{
             </Row>
             <Row>
                 <Col>
-                    <p className="profile-text project">Innovative solutions to wicked problems</p>
+                    <p className="profile-text project">Projects I have been part of</p>
                 </Col>
             </Row>
             <Row className="align-items-center">
