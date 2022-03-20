@@ -112,8 +112,8 @@ const Home = () =>{
                 </Col>
                 <Col className="box relative-pos">
                 <NavLink to="/experience" className="nav-link" onClick={() => resetScroll()}>
-                    <p className="project-popup align-items-center">A Jenga-like cooperative game that challenges players to learn about each other without preconceptions.</p>
-                    <img src="brickthegap.svg"/>
+                    <p className="project-popup align-items-center">A VR experience designed for adolescents aimed to increase genuine interest in the subject of astronomy.</p>
+                    <img src="space-vr.svg"/>
                     </NavLink>
                 </Col>
                 <Col className="hl-ml">
