@@ -96,7 +96,11 @@ const Experience = () =>{
                         <img src="ergobrooch.svg"/>
                     </Col>
                     <Col>
-                        <p className="experience-body-text">{ebDescription}</p>
+                        <p className="experience-body-text">{ebDescription}<p>Responsibilities:
+                        <br/>• Carefully designing and evaluating concepts based on identified issues.
+                        <br/>• Taking advantage of well-known methods in our design process to ensure a positive outcome where user needs are met.
+                        <br/>• Constructing a physical prototype consiting of an electronic prototyping platform (Arduino).
+                        </p></p>
                     </Col>
                     <Col className="hl-ml">
                         <div className="horizontal-line"/>
@@ -110,7 +114,12 @@ const Experience = () =>{
                         <img src="space-vr.svg"/>
                     </Col>
                     <Col>
-                        <p className="experience-body-text">{vrDescription}</p>
+                        <p className="experience-body-text">{vrDescription} <p>Responsibilities:
+                        <br/>• Designing the virtual environment and interaction with Adobe Xd.
+                        <br/>• Designing the physical prototype and its appearance.
+                        <br/>• Working in Unity to develop the system.
+                        <br/>• Rigorously testing and evaluating the UI and physical prototype with our target group.
+                        </p></p>
                     </Col>
                     <Col className="hl-ml">
                         <div className="horizontal-line"/>
