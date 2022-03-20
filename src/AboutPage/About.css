@@ -27,3 +27,8 @@
 .about-vl-mt{
     margin-top: 2%;
 }
+
+.href-remove{
+    color: #f2f2f2;
+    text-decoration: underline;
+}

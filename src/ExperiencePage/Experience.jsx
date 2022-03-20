@@ -19,6 +19,15 @@ const Experience = () =>{
     " can see travel time between destinations and where train changes have to be made. It also hosts a community chat where" + 
     " travellers can share experiences and coordinate trips together.";
 
+    const ebDescription = "The ErgoBrooch is an ergonomic device designed to improve the posture of the wearer in stationary work." + 
+    " It was produced with the Covid pandemic in mind, and the fact that many employees worked remotely from home. At home, you are more relaxed" + 
+    " and therefore there is a tendency to slouch which results in a poor, unhealthy posture. With the Ergobrooch, each member of a team wears one device each and notify" + 
+    " whenever someone is in a bad posture."
+
+    const vrDescription = "My Master Thesis is my latest project and focuses on education through virtual reality. The goal is to design a VR experience that teaches" + 
+    " about the subject of astronomy in an interesting and captivating manner. More specifically, it is meant to raise the genuine intrest in our target group of adolescents" + 
+    " aged 12-18. The user will be able to explore space through a HMD attached to a telescope and learn about and interact with celestial objects."
+
     const [showdt, setShowdt] = useState(false);
         return(
         <div>
@@ -74,6 +83,34 @@ const Experience = () =>{
                         <br/>• UML diagrams of classes we deemed should exist, and how they would depend on each other.<br/>
                         • Programming in Android Studio with Java with a focus on OOP and the Model-View-ViewModel architectural pattern.
                         </p></p>
+                    </Col>
+                    <Col className="hl-ml">
+                        <div className="horizontal-line"/>
+                    </Col>
+                </Row>
+                <Row className="align-items-center row-mb experience-mt">
+                    <Col className="hl-mr">
+                        <div className="horizontal-line"/>
+                    </Col>
+                    <Col>
+                        <img src="ergobrooch.svg"/>
+                    </Col>
+                    <Col>
+                        <p className="experience-body-text">{ebDescription}</p>
+                    </Col>
+                    <Col className="hl-ml">
+                        <div className="horizontal-line"/>
+                    </Col>
+                </Row>
+                <Row className="align-items-center row-mb experience-mt">
+                    <Col className="hl-mr">
+                        <div className="horizontal-line"/>
+                    </Col>
+                    <Col>
+                        <img src="space-vr.svg"/>
+                    </Col>
+                    <Col>
+                        <p className="experience-body-text">{vrDescription}</p>
                     </Col>
                     <Col className="hl-ml">
                         <div className="horizontal-line"/>

@@ -53,7 +53,7 @@ const About = () =>{
             </Row>
             <Row className="align-items-center">
                 <Col>
-                    <p className="about-text">You can contact me via e-mail at augustas.eidikis@outlook.com or send a message to my LinkedIn account here.</p>
+                    <p className="about-text">You can contact me via e-mail at augustas.eidikis@outlook.com or send a message to my LinkedIn account <a href="https://www.linkedin.com/in/augustas-eidikis-779980204/" className="href-remove">here</a>.</p>
                 </Col>
             </Row>
             <Row className="align-items-center">
