@@ -24,9 +24,9 @@ const Experience = () =>{
     " and therefore there is a tendency to slouch which results in a poor, unhealthy posture. With the Ergobrooch, each member of a team wears one device each and notify" + 
     " whenever someone is in a bad posture."
 
-    const vrDescription = "My Master Thesis is my latest project and focuses on education through virtual reality. The goal is to design a VR experience that teaches" + 
-    " about the subject of astronomy in an interesting and captivating manner. More specifically, it is meant to raise the genuine intrest in our target group of adolescents" + 
-    " aged 12-18. The user will be able to explore space through a HMD attached to a telescope and learn about and interact with celestial objects."
+    const vrDescription = "My Master's Thesis is my latest project and focuses on education through virtual reality. The goal is to design a VR experience that teaches" + 
+    " about the subject of astronomy in an interesting and captivating manner. More specifically, it is meant to raise the genuine interest of our target group of adolescents" + 
+    " aged 12-18. The user will be able to explore space through an HMD attached to a telescope and learn about and interact with celestial objects."
 
     const [showdt, setShowdt] = useState(false);
         return(
@@ -64,7 +64,7 @@ const Experience = () =>{
                         <p className="experience-body-text">{grDescription}<p>Responsibilities:
                         <br/>• Creating wireframes and mockups of the design.
                         <br/>• Coding UI layout and connecting it to the model, and in general have a sound project structure that is coherent and decoupled,
-                        with a Model-View-Viewmodel pattern in mind.</p></p>
+                        with a Model-View-ViewModel pattern in mind.</p></p>
                     </Col>
                     <Col className="hl-ml">
                         <div className="horizontal-line"/>
@@ -99,7 +99,7 @@ const Experience = () =>{
                         <p className="experience-body-text">{ebDescription}<p>Responsibilities:
                         <br/>• Carefully designing and evaluating concepts based on identified issues.
                         <br/>• Taking advantage of well-known methods in our design process to ensure a positive outcome where user needs are met.
-                        <br/>• Constructing a physical prototype consiting of an electronic prototyping platform (Arduino).
+                        <br/>• Constructing a physical prototype consisting of an electronic prototyping platform (Arduino).
                         </p></p>
                     </Col>
                     <Col className="hl-ml">
