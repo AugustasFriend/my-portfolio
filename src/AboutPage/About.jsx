@@ -1,6 +1,10 @@
 import React from "react";
 import { Container, Row, Col} from "react-bootstrap";
 
+/**
+ * 
+ * @returns Component that displays the about page of the portfolio
+ */
 const About = () =>{
     return(
     <div>

@@ -4,37 +4,17 @@ import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import { NavLink } from "react-router-dom";
 
+/**
+ * 
+ * @returns component that displays the home page of the portfolio.
+ */
+
 const Home = () =>{
-
-    const titles = [
-        'Interaction Designer', 'Software Developer'
-    ]
-
+    
+    //Function that resets scroll bar value to 0
     function resetScroll(){
         window.scrollTo(0, 0)
     }
-
-    var [newTitle, setnewTitle] = useState("Interaction Designer");
-
-    var [currentTitle, setCurrentTitle] = useState(0);
-
-    const swapTitle = useCallback(() => {
-        var index = 0;
-        if(currentTitle ==0){
-            index = 1;
-            setCurrentTitle(currentTitle++);
-        }
-        else{
-            index = 0;
-            setCurrentTitle(currentTitle--);
-        }
-        setnewTitle(titles[index]);
-    }, []);
-
-    useEffect(() => {
-        const intervalID = setInterval(swapTitle, 5000);
-        return () => clearInterval(intervalID);
-    }, [swapTitle])
 
     return(<div>
         <Container>
@@ -127,4 +107,25 @@ const Home = () =>{
 
 export default Home;
 /*                        <p className={`profile-text title + ${newTitle == "Interaction Designer"? "interaction-designer": "software-developer"}`}>{newTitle}</p>
+        var [newTitle, setnewTitle] = useState("Interaction Designer");
+
+    var [currentTitle, setCurrentTitle] = useState(0);
+
+    const swapTitle = useCallback(() => {
+        var index = 0;
+        if(currentTitle ==0){
+            index = 1;
+            setCurrentTitle(currentTitle++);
+        }
+        else{
+            index = 0;
+            setCurrentTitle(currentTitle--);
+        }
+        setnewTitle(titles[index]);
+    }, []);
+
+    useEffect(() => {
+        const intervalID = setInterval(swapTitle, 5000);
+        return () => clearInterval(intervalID);
+    }, [swapTitle])
 */

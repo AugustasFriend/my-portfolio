@@ -35,6 +35,7 @@
     padding: 0 3% 0 3%;
 }
 
+/*info text of projects set to hidden*/
 .project-popup{
     width: 220px;
     height: 160px;
@@ -53,10 +54,12 @@
     transition: opacity 1s, visibility 1s;
 }
 
+/*values for the container of project images*/
 .relative-pos{
     position: relative !important;
 }
 
+/*when hovering the container of the project image, set visibility to true and increase opacity*/
 .relative-pos:hover .project-popup{
     visibility: visible;
     opacity: 1;

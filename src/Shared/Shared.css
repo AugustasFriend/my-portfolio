@@ -36,6 +36,7 @@
     padding-top: 6px;
 }
 
+/* change navtext color on hover and select*/
 .nav-text:hover + .underscore{
     background-color: white;
     width:100%;
@@ -45,6 +46,7 @@
     color: white;
 }
 
+/* change navtext color on hover */
 .nav-text.activated{
     color: white;
     font-size: 18px;
@@ -84,6 +86,7 @@
     margin-left: 3%;
 }
 
+/* creates a hidden underscore*/
 .underscore{
     width:0px;
     height:2px;
@@ -91,6 +94,7 @@
     background-color:white;
   }
 
+/* activates the underscore beneath selected page text in the navbar */
 .underscore.activated{
     width: 100%;
     background-color: white;
@@ -112,19 +116,4 @@
 
 .row-mt{
     margin-top: 4%;
-}
-
-.fade-in{
-    transition: opacity 1s ease;
-    color: white;
-    font-family:'Montserrat';
-    font-size: 22px;
-}
-
-.fade-out{
-    opacity: 0;
-    transition: opacity 1s ease;
-    color: white;
-    font-family:'Montserrat';
-    font-size: 22px;
 }

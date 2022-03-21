@@ -4,15 +4,21 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Link, NavLink, useLocation } from "react-router-dom";
 
-
+//Returns name of currently showed page
 function useActiveRoute() {
     const location = useLocation();
     return location.pathname;
   }
 
+//Resets the value of the scroll bar to 0
 function resetScroll(){
     window.scrollTo(0, 0)
 }
+
+/**
+ * 
+ * @returns component that displays a navbar used for navigation between main components
+ */
 const NavBar = () =>{
     
     return(

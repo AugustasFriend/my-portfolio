@@ -21,6 +21,7 @@
   color: #61dafb;
 }
 
+/* below the settings for the scroll bar are configured */
 /* width */
 ::-webkit-scrollbar {
   width: 6px;

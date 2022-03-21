@@ -1,8 +1,13 @@
 import {React, useState} from "react";
 import {Col, Row, Container } from "react-bootstrap";
 
+/**
+ * 
+ * @returns component that displays the experience page of the portfolio
+ */
 const Experience = () =>{
 
+    //Below are several constants strings used for describing the projects
     const dtDescription = "The Designer's Toolkit is a web-based application that caters to" + 
     " designers' need for documentation and the structuring of projects with regard to design processes." + 
     " With it, the user can browse a 6-phase design process and add design methods to their projects." + 
