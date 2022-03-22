@@ -32,3 +32,19 @@
     color: #f2f2f2;
     text-decoration: underline;
 }
+
+.about-image-ml{
+    margin-left: 2%;   
+}
+
+.about-image-mr{
+    margin-right: 2%;
+}
+
+.about-icon{
+    transition: transform 0.5s;
+}
+
+.about-icon:hover{
+    transform: scale(1.15);
+}

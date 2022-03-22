@@ -56,8 +56,15 @@ const About = () =>{
                 </Col>
             </Row>
             <Row className="align-items-center">
-                <Col>
-                    <p className="about-text">You can contact me via e-mail at augustas.eidikis@outlook.com or send a message to my LinkedIn account <a href="https://www.linkedin.com/in/augustas-eidikis-779980204/" className="href-remove">here</a>.</p>
+                <Col className="about-image-mr">
+                    <a href="mailto:augustas.eidikis@outlook.com">
+                        <img src="mail-img.svg" className="about-icon"/>
+                    </a>
+                </Col>
+                <Col className="about-image-ml">
+                    <a href="https://www.linkedin.com/in/augustas-eidikis-779980204/" target="_blank">
+                         <img src="linkedin-img.svg" className="about-icon"/>
+                    </a>
                 </Col>
             </Row>
             <Row className="align-items-center">
