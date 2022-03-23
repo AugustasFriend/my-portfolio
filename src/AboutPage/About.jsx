@@ -74,28 +74,44 @@ const About = () =>{
             </Row>
             <Row className="align-items-center row-mb">
                 <Col className="about-tools-padding">
-                    <img src="adobexd-image.svg"/>
+                    <a href="https://www.adobe.com/se/creativecloud/business/enterprise/xd.html" target="_blank">
+                        <img src="adobexd-image.svg" className="about-icon"/>
+                    </a>
                 </Col>
                 <Col className="about-tools-padding">
-                    <img src="android-image.svg"/>
+                    <a href="https://developer.android.com/studio" target="_blank">
+                        <img src="android-image.svg" className="about-icon"/>
+                    </a>
                 </Col>
                 <Col className="about-tools-padding">
-                    <img src="css-image.svg"/>
+                    <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">
+                        <img src="css-image.svg" className="about-icon"/>
+                    </a>
                 </Col>
                 <Col className="about-tools-padding">
-                    <img src="figma-image.svg"/>
+                    <a href="https://www.figma.com/" target="_blank"> 
+                        <img src="figma-image.svg" className="about-icon"/>
+                    </a>
                 </Col>
                 <Col className="about-tools-padding">
-                    <img src="illustrator-image.svg"/>
+                    <a href="https://www.adobe.com/se/products/illustrator.html" target="_blank">
+                        <img src="illustrator-image.svg" className="about-icon"/>
+                    </a>
                 </Col>
                 <Col className="about-tools-padding">
-                    <img src="java-image.svg"/>
+                    <a href="https://www.java.com/en/" target="_blank">
+                        <img src="java-image.svg" className="about-icon"/>
+                    </a>
                 </Col>
                 <Col className="about-tools-padding">
-                    <img src="javascript-image.svg"/>
+                    <a href="https://www.javascript.com/" target="_blank">
+                        <img src="javascript-image.svg" className="about-icon"/>
+                    </a>
                 </Col>
                 <Col className="about-tools-padding">
-                    <img src="react-image.svg"/>
+                    <a href="https://reactjs.org/" target="_blank">
+                        <img src="react-image.svg" className="about-icon"/>
+                    </a>
                 </Col>
             </Row>
         </Container>

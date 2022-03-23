@@ -48,3 +48,12 @@
 .about-icon:hover{
     transform: scale(1.15);
 }
+
+/*.about-tools-padding span {
+    display: none;
+    position: relative;
+  }
+
+.about-tools-padding:hover span {
+    display: block;
+  }*/
