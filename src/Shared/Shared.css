@@ -117,3 +117,8 @@
 .row-mt{
     margin-top: 4%;
 }
+
+.href-remove{
+    color: #f2f2f2;
+    text-decoration: underline;
+}

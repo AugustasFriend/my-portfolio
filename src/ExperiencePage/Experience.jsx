@@ -53,6 +53,7 @@ const Experience = () =>{
                         <p className="experience-body-text">{dtDescription} <p>Responsibilities: <br/> • More or less responsible for all parts of the application.
                         <br/>{dtWID} <br/>• Worked primarily with Bootstrap to structure the HTML content, React Router to effectively implement navigation and React Redux to store global variables
                         that could be sent across various components and change content accordingly.</p></p>
+                        <p className="experience-body-text">Check the application <a  className="href-remove" href="https://designers-toolkit.meteorapp.com/" target="_blank">here!</a></p>
                     </Col>
                     <Col className="hl-ml">
                         <div className="horizontal-line"/>
